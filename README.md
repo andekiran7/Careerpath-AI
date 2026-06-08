@@ -1,24 +1,27 @@
-CAREERPATH-AI
+                                                          CAREERPATH-AI
+
+
 
 ***********************
-User: ande@example.com
-
-Password: 12345
+# User: ande@example.com
+# Password: 12345
 ------------------------------------------------------------------------------------------------------------------
 # 🚀 CareerPath AI
 
 # CareerPath AI - Project Description
 
-CareerPath AI is an AI-powered career guidance web application developed to help users identify suitable career paths based on their skills and interests. The system provides a complete career development journey, starting from skill assessment and ending with a personalized learning roadmap. Users can register and log in securely using JWT-based authentication. The application allows users to submit their skills, proficiency levels, and assessment scores.
+#CareerPath AI is an AI-powered career guidance web application developed to help users identify suitable career paths based on their skills and interests. The system provides a complete career development journey, starting from skill assessment and ending with a personalized learning roadmap. Users can register and log in securely using JWT-based authentication. The application allows users to submit their skills, proficiency levels, and assessment scores.
 Based on the assessment data, the system recommends relevant career opportunities that match the user's profile. It also performs skill gap analysis by comparing the user's existing skills with the skills required for a target career. The identified skill gaps help users understand which technologies or competencies they need to learn.
 The application generates a personalized learning roadmap that guides users through a step-by-step learning path to achieve their career goals. The frontend is built using React.js, providing a responsive and interactive user interface. The backend is developed using Spring Boot and follows RESTful API architecture. MySQL is used for data storage and management.
 Spring Security and JWT are implemented to ensure secure authentication and authorization. The project follows a modular architecture, making it scalable and maintainable. Modern UI/UX principles, including glassmorphism effects, responsive layouts, and interactive dashboards, are used to enhance the user experience.
-CareerPath AI demonstrates the integration of frontend, backend, database management, authentication, and career recommendation features into a single full-stack application. The project showcases practical knowledge of Java Full Stack Development and serves as a career assistance platform for students and job seekers.
+CareerPath AI demonstrates the integration of frontend, backend, database management, authentication, and career recommendation features into a single full-stack application. The project showcases practical knowledge of Java Full Stack Development and serves as a career assistance platform for students and job seekers.#
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-***PROJECT STRUCTURE***
 
+## 📂 Project Structure
+
+```text
 CareerPath-AI/
 │
 ├── careerpath-frontend/
@@ -54,11 +57,11 @@ CareerPath-AI/
 │   │   └── RoadmapPage.css
 │   │
 │   ├── package.json
-│   ├── vite.config.js
-│   └── node_modules/
+│   └── vite.config.js
 │
 ├── src/
 │   └── main/
+│       │
 │       ├── java/
 │       │   └── com/
 │       │       └── careerpathai/
@@ -94,8 +97,8 @@ CareerPath-AI/
 │       │
 │       │           ├── security/
 │       │           │   ├── JwtUtil.java
-│       │           │   ├── SecurityConfig.java
-│       │           │   └── JwtFilter.java
+│       │           │   ├── JwtFilter.java
+│       │           │   └── SecurityConfig.java
 │       │
 │       │           └── CareerPathAiApplication.java
 │       │
@@ -103,16 +106,12 @@ CareerPath-AI/
 │           ├── application.properties
 │           └── static/
 │
-├── target/
-│
 ├── .gitignore
 ├── pom.xml
 ├── README.md
 └── database.sql
-
-
-## 📂 Project Structure
-
+```
+-------------------------------------------
 ```text
 CareerPath-AI
 ├── careerpath-frontend     # React Frontend
@@ -121,6 +120,27 @@ CareerPath-AI
 ├── pom.xml                 # Maven Dependencies
 ├── README.md               # Project Documentation
 └── .gitignore              # Git Ignore Rules
+```
+
+## 🏗️ Project Architecture
+
+```text
+React Frontend (React.js)
+        │
+        ▼
+REST APIs (Axios)
+        │
+        ▼
+Spring Boot Controllers
+        │
+        ▼
+Services (Business Logic)
+        │
+        ▼
+Repositories (Spring Data JPA)
+        │
+        ▼
+MySQL Database
 ```
 -----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -167,25 +187,7 @@ CareerPath-AI
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-## 🏗️ Project Architecture
-'''text
-React Frontend
-       │
-       ▼
-REST APIs (Axios)
-       │
-       ▼
-Spring Boot Controllers
-       │
-       ▼
-Services (Business Logic)
-       │
-       ▼
-Repositories (JPA)
-       │
-       ▼
-MySQL Database
-'''
+
 
 ## 💻 Tech Stack
 
