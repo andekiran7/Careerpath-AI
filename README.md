@@ -1,4 +1,8 @@
+CAREERPATH-AI
+
+***********************
 User: ande@example.com
+
 Password: 12345
 ------------------------------------------------------------------------------------------------------------------
 # 🚀 CareerPath AI
@@ -12,6 +16,7 @@ Spring Security and JWT are implemented to ensure secure authentication and auth
 CareerPath AI demonstrates the integration of frontend, backend, database management, authentication, and career recommendation features into a single full-stack application. The project showcases practical knowledge of Java Full Stack Development and serves as a career assistance platform for students and job seekers.
 
 ---------------------------------------------------------------------------------------------------------------------------
+'''text
 ***PROJECT STRUCTURE***
 
 CareerPath-AI/
@@ -104,7 +109,7 @@ CareerPath-AI/
 ├── pom.xml
 ├── README.md
 └── database.sql
-
+'''
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 ## 📌 Features
@@ -151,7 +156,7 @@ CareerPath-AI/
 -------------------------------------------------------------------------------------------------------------------------------
 
 ## 🏗️ Project Architecture
-
+'''text
 React Frontend
        │
        ▼
@@ -168,7 +173,7 @@ Repositories (JPA)
        │
        ▼
 MySQL Database
-
+'''
 
 ## 💻 Tech Stack
 
