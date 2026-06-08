@@ -18,7 +18,7 @@ CareerPath AI demonstrates the integration of frontend, backend, database manage
 ---------------------------------------------------------------------------------------------------------------------------
 
 ***PROJECT STRUCTURE***
-'''text
+
 CareerPath-AI/
 │
 ├── careerpath-frontend/
@@ -109,7 +109,19 @@ CareerPath-AI/
 ├── pom.xml
 ├── README.md
 └── database.sql
-'''
+
+
+## 📂 Project Structure
+
+```text
+CareerPath-AI
+├── careerpath-frontend     # React Frontend
+├── src/main/java           # Spring Boot Backend
+├── src/main/resources      # Configuration Files
+├── pom.xml                 # Maven Dependencies
+├── README.md               # Project Documentation
+└── .gitignore              # Git Ignore Rules
+```
 -----------------------------------------------------------------------------------------------------------------------------------------
 
 ## 📌 Features
