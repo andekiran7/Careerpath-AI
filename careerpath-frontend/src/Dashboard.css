@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f5f3ff;
+}
+
+.dashboard{
+  min-height:100vh;
+  padding:30px;
+}
+
+.dashboard-container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.logo{
+  color:#7C5DFA;
+  font-size:32px;
+}
+
+.logout-btn{
+  background:#ef4444;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:12px;
+  cursor:pointer;
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.search-box{
+  background:white;
+  border-radius:15px;
+  padding:15px 20px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.search-box input{
+  border:none;
+  outline:none;
+  width:100%;
+  font-size:15px;
+}
+
+.hero-banner{
+  margin-top:25px;
+  padding:40px;
+  border-radius:25px;
+
+  background:linear-gradient(
+    135deg,
+    #7C5DFA,
+    #A78BFA
+  );
+
+  color:white;
+}
+
+.hero-banner h1{
+  margin-bottom:10px;
+}
+
+.card-grid{
+  margin-top:30px;
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:20px;
+}
+
+.feature-card{
+  padding:25px;
+  border-radius:20px;
+  color:white;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.feature-card:hover{
+  transform:translateY(-5px);
+}
+
+.assessment{
+  background:#3b82f6;
+}
+
+.recommendation{
+  background:#8b5cf6;
+}
+
+.skillgap{
+  background:#10b981;
+}
+
+.roadmap{
+  background:#f59e0b;
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.stats-section{
+  margin-top:40px;
+}
+
+.stats-section h2{
+  margin-bottom:20px;
+  color:#444;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+}
+
+.stat-card{
+  background:white;
+  padding:25px;
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stat-card h3{
+  color:#7C5DFA;
+  font-size:32px;
+}
