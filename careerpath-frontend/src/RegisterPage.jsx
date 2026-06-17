@@ -1,27 +1,34 @@
 import "./App.css";
 import { useState } from "react";
-import { loginUser } from "./services/userService";
 import { useNavigate } from "react-router-dom";
+import { registerUser } from "./services/userService";
 
-function LoginPage() {
+function RegisterPage() {
+
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
 
-  const handleLogin = async () => {
+  const handleRegister = async () => {
+
     try {
-      const result = await loginUser(email, password);
 
-      localStorage.setItem("token", result);
+      await registerUser(
+        fullName,
+        email,
+        password
+      );
 
-      alert("Login Successful!");
+      alert("Registration Successful!");
 
-      navigate("/dashboard");
+      navigate("/");
 
     } catch (error) {
 
-      alert("Login Failed!");
+      alert("Registration Failed!");
+
       console.error(error);
 
     }
@@ -41,44 +48,51 @@ function LoginPage() {
           <h1>CareerPath AI</h1>
 
           <p>
-            Shape your future with AI-powered career guidance.
+            Start your career journey with AI-powered guidance.
           </p>
 
         </div>
 
         <div className="right-panel">
 
-          <h2>Login to your Account</h2>
+          <h2>Create New Account</h2>
+
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+          />
 
           <input
             type="email"
-            placeholder="Enter Email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
 
           <input
             type="password"
-            placeholder="Enter Password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
 
-          <button onClick={handleLogin}>
-            Login
+          <button onClick={handleRegister}>
+            Register
           </button>
 
           <p style={{ marginTop: "20px" }}>
-            New User?{" "}
+            Already have an account?{" "}
             <span
-              onClick={() => navigate("/register")}
+              onClick={() => navigate("/")}
               style={{
-                color: "#7C5DFA",
+                color: "#8B2C6A",
                 cursor: "pointer",
                 fontWeight: "bold"
               }}
             >
-              Register Here
+              Login Here
             </span>
           </p>
 
@@ -90,4 +104,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default RegisterPage;

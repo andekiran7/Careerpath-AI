@@ -1,10 +1,26 @@
 import { useState } from "react";
 import "./AssessmentPage.css";
+import { useNavigate } from "react-router-dom";
 
 function AssessmentPage() {
+
   const [skill, setSkill] = useState("");
   const [score, setScore] = useState("");
   const [level, setLevel] = useState("");
+
+  const navigate = useNavigate();
+
+  const handleSubmit = () => {
+
+    navigate("/assessment-result", {
+      state: {
+        skill,
+        score,
+        level
+      }
+    });
+
+  };
 
   return (
     <div className="assessment-page">
@@ -51,7 +67,10 @@ function AssessmentPage() {
           />
         </div>
 
-        <button className="submit-btn">
+        <button
+          className="submit-btn"
+          onClick={handleSubmit}
+        >
           Submit Assessment
         </button>
 
